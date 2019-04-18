@@ -1,0 +1,710 @@
+
+@import url(http://fonts.googleapis.com/css?family=Lato:300,400,700,900);
+@import url(http://fonts.googleapis.com/css?family=Raleway:400,300,700,900);
+@import url('https://fonts.googleapis.com/css?family=Nova+Flat');
+@import url("https://netdna.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css");
+
+html {
+position:relative; 
+min-height:100%;
+}
+
+body {
+    min-height:100%;
+    background-color: #D8D8D8;
+    font-family: "Lato";
+    font-weight: 300;
+    font-size: 16px;
+    color: #555;
+    padding: 0;
+    height: 100%;
+    -webkit-font-smoothing: antialiased;
+    -webkit-overflow-scrolling: touch;
+    margin-top: 70px;
+    margin-bottom: 27vh;
+}
+
+:active, :hover, :focus { /*Убрать синюю обводку*/
+    outline: 0;
+    outline-offset: 0;
+}
+
+/* Titles */
+h1, h2, h3, h4, h5, h6 {
+    font-family: "ARIAL";
+    font-weight: 300;
+    color: #333;
+}
+
+
+/* Paragraph & Typographic */
+p {
+    line-height: 28px;
+    margin-bottom: 25px;
+}
+
+.centered {
+    text-align: center;
+}
+
+.conatainer {
+    margin: 0;
+    padding: 0; 
+}
+
+/* Links */
+a {
+    color: #ADAEB2;
+    word-wrap: break-word;
+
+    -webkit-transition: color 0.1s ease-in, background 0.1s ease-in;
+    -moz-transition: color 0.1s ease-in, background 0.1s ease-in;
+    -ms-transition: color 0.1s ease-in, background 0.1s ease-in;
+    -o-transition: color 0.1s ease-in, background 0.1s ease-in;
+    transition: color 0.1s ease-in, background 0.1s ease-in;
+}
+
+a:hover,
+a:focus {
+    color: #7b7b7b;
+    text-decoration: none;
+    outline: 0;
+}
+
+a:before,
+a:after {
+    -webkit-transition: color 0.1s ease-in, background 0.1s ease-in;
+    -moz-transition: color 0.1s ease-in, background 0.1s ease-in;
+    -ms-transition: color 0.1s ease-in, background 0.1s ease-in;
+    -o-transition: color 0.1s ease-in, background 0.1s ease-in;
+    transition: color 0.1s ease-in, background 0.1s ease-in;
+}
+
+hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #ccc;
+    margin:  1em 0;
+    padding: 0;
+}
+
+.navbar {
+    font-weight: 800;
+    font-size: 16px;
+    padding-top: 10px;
+    padding-bottom: 5px;
+}
+
+.navbar-toggle {
+    background-color: transparent;
+    border: 1px solid #A9A9A9 !important;
+}
+
+.navbar-inverse {
+    background: #171A20;
+    background-image: url(../img/bg_pattern-dark.png);
+    border-top: 2px solid white;
+}
+
+.navbar-inverse .navbar-nav  a {
+    margin: 0 3px 0 3px;
+    text-align: center;
+    border-bottom: 1px solid black; 
+}
+
+.navbar-inverse .navbar-nav > .active > a {
+    background-color: #fff;
+    color: black;
+    border-radius: 13px;
+}
+
+.navbar-inverse .navbar-nav > .active > a:hover {
+    background-color: #CDCDCD;
+    color: #121212;
+    text-decoration: underline;
+    -webkit-transition: all 0.1s ease-in;
+    -moz-transition: all 0.1s ease-in;
+    -ms-transition: all 0.1s ease-in;
+    -o-transition: all 0.1s ease-in;
+    transition: all 0.1s ease-in;
+}
+
+.navbar-inverse .navbar-brand {
+    color: 999;
+    font-family: Nova Flat;
+    text-decoration: underline;
+    font-weight: bolder;
+    font-size: 30px;
+    letter-spacing: 2px;
+}
+
+#content{
+    width: 100%;
+    min-height: 100%;
+    background: #66ccff;
+    margin:0 auto -250px;
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+#footer {
+    background-color: #171A20;
+    background-image: url(../img/bg_pattern-dark.png);
+    padding-top: 15px;
+    padding-bottom: 20px;
+    margin-top: 20px; 
+    position: absolute;
+    width: 100%;
+    height: 250px;
+}
+
+#footer i {
+    color: #bdbdbd;
+    font-size: 30px;
+    padding: 20px;
+    width: 70px;
+    height: 70px;
+    margin-left: 2px; 
+    border-radius: 20px;
+    transition: border-radius 0.7s;
+}
+
+#footer i:hover {
+    background-color: #fff;
+    border-radius: 50px;
+    color: #2753F8;
+}
+
+#footer #feedback-link {
+    color: #F85C37;
+    /*color: #686868;*/
+    font-size: 16px;
+    font-family: ARIAL;
+}
+
+
+
+#headerwrap {
+    background: url(../img/header-sw.jpg) no-repeat center top;
+    margin-top: -10;
+    padding-top: 20px;
+    text-align: center;
+    min-height: 700px;
+    width:100%;
+    background-size: 100%;
+    background-attachment: fixed;
+    background-origin: initial;
+    background-clip: initial;
+    background-size: cover;
+    background-position: 50% 0;
+}
+
+#headerwrap h1 {
+    margin-top: 70px;
+    color: #eee;
+    font-size: 7vh;
+    font-weight: 300;
+    letter-spacing: 3px;
+    text-shadow: 0 0 8px blue;
+    word-wrap: break-word;
+}
+
+#headerwrap h2 {
+    margin-top: 70px;
+    color: white;
+    font-size: 6vh;
+    font-weight: 600;
+    text-shadow: 0 0 5px red;
+    opacity: .9;
+}
+
+.inf {
+    color: #686868;
+    font-size: 16px;
+    font-family: ARIAL;
+    margin: 0;
+}
+
+.str {
+  display: block;
+  margin: auto;
+  font-family: "Raleway";
+  font-size: 32px;
+  width: 80%;
+  height: 100%;
+  float: left;
+  padding-left: 10px;
+  padding-top: 10px;
+  color: #5F6559;
+  position: relative;
+  -webkit-transition: all 0.3s cubic-bezier(0.2, 0, 0, 1);
+  transition: all 0.3s cubic-bezier(0.2, 0, 0, 1);
+  z-index: 1;
+}
+
+.str:after {
+  content: '';
+  display: block;
+  height: 2px;
+  position: absolute;
+  bottom: 0;
+  right: 1.25rem;
+  left: 1.25rem;
+  background-color: #ffffff;
+  -webkit-transition: all 0.3s cubic-bezier(0.2, 0, 0, 1);
+  transition: all 0.3s cubic-bezier(0.2, 0, 0, 1);
+  -webkit-transform-origin: bottom center;
+          transform-origin: bottom center;
+  z-index: -1;
+}
+
+.str:hover {
+  color: #2D2D2D;
+}
+
+.str:hover:after {
+  right: 0;
+  left: 0;
+  height: 100%;
+}
+
+#index {
+    width: 100%;
+    font-size: 20px;
+    font-family: "Raleway";
+}
+
+.main {
+    margin-bottom: 40vh;
+}
+
+
+/*оформление слайдера*/
+
+#slider {
+    width: 100%;
+    margin: 0 auto;
+    margin-top: 10vh;
+}
+
+#viewport {
+    width: 75%;
+    margin: 0 auto;
+    position: relative;
+    overflow: hidden;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    -o-user-select: none;
+    user-select: none;
+    text-align: center;
+}
+
+@media (max-width: 930px) {
+  #viewport {width: 100%;} 
+}
+
+#slidewrapper {
+    position: relative;
+    width: calc(100% * 4);
+    -webkit-transition: 1s;
+    -o-transition: 1s;
+    transition: 1s;
+    -webkit-transition-timing-function: cubic-bezier(.67,.01,.23,1);
+    -o-transition-timing-function: cubic-bezier(.67,.01,.23,1);
+    transition-timing-function: cubic-bezier(.67,.01,.23,1);
+}
+
+#slidewrapper, #slidewrapper ul, #slidewrapper li {
+    margin: 0;
+    padding: 0;
+}
+
+.slide {
+    width: calc(100%/4);
+    list-style: none;
+    display: inline;
+    float: left;
+}
+
+.slide-img {
+    width: 100%;
+}
+
+#prev-slide {
+    position: absolute;
+    background: url(../img/prev.png) no-repeat;
+    width: 70px;
+    height: 70px;
+    opacity: 0.4;
+    border-radius: 50%;
+    top: calc(50% - 25px);
+    transition: all 0.3s ease-in;
+}
+
+#next-slide {
+    position: absolute;
+    background: url(../img/next.png) no-repeat;
+    width: 70px;
+    height: 70px;
+    opacity: 0.4;
+    border-radius: 50%;
+    top: calc(50% - 25px);
+    transition: all 0.3s ease-in;
+}
+
+#prev-slide:hover, #next-slide:hover {
+    opacity: 0.6;
+    cursor: pointer;
+}
+
+#prev-slide {
+    left: 20px;
+}
+
+#next-slide {
+    right: 20px;
+}
+
+#nav-btns {
+    position: absolute;
+    width: 100%;
+    bottom: 20px;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+}
+
+.slide-nav-btn {
+    position: relative;
+    display: inline-block;
+    list-style: none;
+    width: 15px;
+    height: 15px;
+    background-color: #9CB0B0;
+    border-radius: 50%;
+    margin: 3px;
+    transition: all 0.2s ease-in;
+}
+
+.slide-nav-btn:hover {
+    cursor: pointer;
+    background-color: #738787;
+}
+
+/*-----------------------------------*/
+
+
+/*Оформление блока новостей*/
+
+
+.new_new {
+    background-color: #BFC0C4;
+    border: 1px solid #4E4F53;
+    width: 100%;
+    margin-top: 15px;
+}
+
+.page-number {
+    font-family: ARIAL;
+    color: black;
+    font-weight: bold;
+    font-size: 16px;
+    text-decoration: underline;
+    padding: 5px;
+    margin-top: 20px;
+    display: inline;
+    transition: all 0.1s ease-in;
+}
+
+.page-number:hover {
+    color: #4E4F53; 
+    text-decoration: underline;
+}
+
+.new-img {
+    width: 40%;
+    overflow: hidden;
+    margin-left: 10px;
+    transition: all 0.3s ease; 
+}
+
+.new-img:hover {
+    opacity: 0.9;
+}
+
+@media (max-width: 930px) {
+  .new-img {width: 100%; margin: 0;} 
+}
+
+.img-new {
+    margin: 0 auto;
+    width: 100%;
+}
+
+.new-text {
+    font-family: ARIAL;
+    font-size: 20px;
+}
+
+.btn-up {
+    width: 20vh;
+    margin: 10px;
+    font-size: 16px;
+    background: whitesmoke;
+    border-radius: 2px;
+    font-family: arial;
+    padding: 15px 0px;
+    cursor: pointer;
+    transition: all 1s ease;
+    color: #5C71C4;
+    border: solid 2px #5C71C4;
+}
+.btn-up:hover {
+  box-shadow: inset 0 3.1em #5C71C4;
+  color: whitesmoke;
+}
+
+.new-content {
+    margin-top: 30px;
+    margin-bottom: 5vh; 
+    padding: 5px;
+    background-color: hsla(135, 8%, 71%, 0.4);
+}
+
+.new-subj{
+    text-decoration: underline;
+    background-color: hsla(135, 5%, 56%, 0.4);
+}
+
+.new-image {
+    width: 100%;
+}
+/*---------------------------------------*/
+
+
+/*оформление заднего фона*/
+.backwrap {
+    background-size:100% 100%;
+    width:100%;
+    height:100%;
+    position:fixed;
+    left:0;
+    top:0;
+    z-index:-1;
+}
+
+.back-shapes {
+    width:100%;
+    height:100%;
+    position:relative;
+    overflow:hidden;
+}
+
+.back-shapes em {
+    opacity:0.2;
+    position:absolute;
+    width:2%;
+    font-size:240%!important;
+    color: gray;
+}
+
+/*Оформление контактной формы обратной связи*/
+#contact {
+    margin: 4vh;
+}
+
+.contact-inf {
+    padding-bottom: 110px; 
+}
+
+.contact-str {
+    width: 60%;
+    font-family: Raleway;
+    font-size: 5vh;
+    color: black;
+    padding: 0 30px 0 30px;
+    transition: all 0.3s ease-in;
+}
+
+.contact-str:hover {
+    color: #383838;
+}
+
+.contact-str > .contact-icon {
+    padding-right: 10px;
+    color: #536AED;
+}
+
+@media(max-width: 1000px) {
+    .contact-inf{
+        display: none;
+    }
+}
+
+.form-group input {
+    font-family: ARIAL;
+    color: #181818;
+    background-color: #E9E9ED;
+    border: 2px #4A524C solid;
+    border-radius: 10px; 
+}
+
+#message {
+    height: 22vh;
+    font-family: ARIAL;
+    color: #181818;
+    background-color: #E9E9ED;
+    border: 2px #4A524C solid;
+    border-radius: 10px; 
+}
+
+.form-group input:focus {
+    color: #fff;
+    background-color: #6B7EED;
+    border-color: #fff;
+}
+
+#message:focus {
+    color: #fff;
+    background-color: #6B7EED;
+    border-color: #fff;
+}
+
+.form-group input:focus::placeholder {
+    color: #fff;
+}
+
+#message:focus::placeholder {
+    color: #fff;
+}
+
+.form-group input::placeholder {
+    color: #181818;
+}
+
+#message::placeholder {
+    color: #181818;
+}
+
+input {outline: none;}
+input:-webkit-autofill {
+    -webkit-box-shadow: inset 0 0 0 50px #6B7EED !important; /* Цвет фона */
+    -webkit-text-fill-color: #fff !important; /* цвет текста */
+    color: #999 !important; /* цвет текста */
+}
+
+.sub {
+    font-family: ARIAL;
+    font-weight: bold;
+    font-size: 3vh;
+    color: #181818;
+    width: 40vh;
+    min-height: 15vh;
+    background-color: #6B7EED;
+    border: 1px solid #fff;
+    border-radius: 10px;
+    user-select:none;
+    transition: all 0.2s ease-in;
+}
+
+.sub:hover {
+    background-color: #536AED;
+}
+
+@media (max-width: 930px) {
+  .sub {width: 100%; height: 10vh;} 
+}
+/*------------------------------------------------------------------------*/
+
+.back-to-top {
+    background-color: #D4CDCF;
+    color: #3E3E3E;
+    background-image: url(icon-top.png);
+    border: transparent;
+    cursor: pointer;
+    opacity: 0.5;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    display:none;
+}
+
+
+/* XML */
+INFO {
+    background-color: #D8D8D8;
+    text-align:center;
+    font-family: ARIAL;
+    color: #0C0C0C;
+    font-size: 3vh;
+    font-weight:bold;
+    padding: 3px;
+    margin: 3px;
+    width: 50%;
+    border: 1px solid #9A9A9A;
+    margin: 0 auto;
+}
+
+TITLE {
+    display:block;
+    font-size: 4vh;
+    border: 5px solid #6560A3;
+    background-color: #D8D8D8;
+    margin-bottom: 50px;
+}
+
+THEME {
+    display:block;
+    border: 1px solid #828282;
+    background-color: #C7C7C7;
+    padding: 5px;
+    margin: 10px;
+}
+
+STUDENT {
+    display:block;
+    border: 1px solid #828282;
+    background-color: #C7C7C7;
+    padding: 5px;
+    margin: 10px;
+}
+
+FACULTY {
+    display:block;
+    border: 1px solid #828282;
+    background-color: #C7C7C7;
+    padding: 5px;
+    margin: 10px;
+}
+
+UNIVERSITY {
+    display:block;
+    border: 1px solid #828282;
+    background-color: #C7C7C7;
+    padding: 5px;
+    margin: 10px;
+}
+
+NAME {
+    display:block;
+    border: 1px solid #828282;
+    background-color: #C7C7C7;
+    padding: 5px;
+    margin: 10px;
+}
+
+FOOT {
+    display:block;
+    border: 1px solid #828282;
+    background-color: #A3A3A3;
+    padding: 5px;
+    margin: 10px;
+}
+
+/*-----------------------------------------------*/

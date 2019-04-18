@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+		<!--	created with www.mysitemapgenerator.com	-->
+<urlset>
+<url>
+	<name>Главная</name>
+	<loc>https://geekplanet.000webhostapp.com/index.html</loc>
+	<priority>1.0</priority>
+</url>
+<url>
+	<name>Новости</name>
+	<loc>https://geekplanet.000webhostapp.com/news.html</loc>
+	<priority>1.0</priority>
+</url>
+<url>
+	<name>Контакты</name>
+	<loc>https://geekplanet.000webhostapp.com/feedback.html</loc>
+	<priority>1.0</priority>
+</url>
+</urlset>
